@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Slide &amp; Push Menus with CSS3 Transitions</title>
+  <meta name="description" content="Some slide and push menu demos using CSS3 transitions.">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div id="o-wrapper" class="o-wrapper">
+
+  <header class="o-header">
+    <nav class="o-header-nav">
+      <a href="http://callmenick.com/_development/image-caption-reveal-on-hover/" class="o-header-nav__link"><i class="fa fa-arrow-left"></i> Previous Demo</a>
+      <a href="http://callmenick.com/post/slide-and-push-menus-with-css3-transitions" class="o-header-nav__link">Back To Article <i class="fa fa-star"></i></a>
+    </nav>
+    <div class="o-container">
+      <h1 class="o-header__title">Slide and Push Menus with CSS</h1>
+    </div>
+  </header><!-- /o-header -->
+
+  <main class="o-content">
+    <div class="o-container">
+      
+      <div class="c-buttons">
+        <button id="c-button--slide-left" class="c-button">Slide Left</button>
+        <button id="c-button--slide-right" class="c-button">Slide Right</button>
+        <button id="c-button--push-left" class="c-button">Push Left</button>
+        <button id="c-button--push-right" class="c-button">Push Right</button>
+        <button id="c-button--slide-top" class="c-button">Slide Top</button>
+        <button id="c-button--slide-bottom" class="c-button">Slide Botton</button>
+        <button id="c-button--push-top" class="c-button">Push Top</button>
+        <button id="c-button--push-bottom" class="c-button">Push Bottom</button>
+      </div>
+      
+      <div id="github-icons"></div>
+
+    </div><!-- /o-container -->
+  </main><!-- /o-content -->
+
+  <footer class="o-footer">
+    <div class="o-container">
+      <small>&copy; 2015, callmenick.com</small>
+    </div>
+  </footer><!-- /o-footer -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+  <button class="c-menu__close">&larr; Close Menu</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav><!-- /c-menu slide-left -->
+
+<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+  <button class="c-menu__close">Close Menu &rarr;</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav><!-- /c-menu slide-right -->
+
+<nav id="c-menu--push-left" class="c-menu c-menu--push-left">
+  <button class="c-menu__close">&larr; Close Menu</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav><!-- /c-menu push-left -->
+
+<nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+  <button class="c-menu__close">Close Menu &rarr;</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav><!-- /c-menu push-right -->
+
+<nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+  <button class="c-menu__close"><strong>x</strong></button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+  </ul>
+</nav><!-- /c-menu slide-top -->
+
+<nav id="c-menu--push-top" class="c-menu c-menu--push-top">
+  <button class="c-menu__close"><strong>x</strong></button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+</nav><!-- /c-menu push-top -->
+
+<nav id="c-menu--slide-bottom" class="c-menu c-menu--slide-bottom">
+  <button class="c-menu__close"><strong>x</strong></button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+</nav><!-- /c-menu slide-bottom -->
+
+<nav id="c-menu--push-bottom" class="c-menu c-menu--push-bottom">
+  <button class="c-menu__close"><strong>x</strong></button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+</nav><!-- /c-menu push-bottom -->
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/dist/menus.js"></script>
+<script>
+  
+  /**
+   * Slide left instantiation and action.
+   */
+  var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideLeftBtn = document.querySelector('#c-button--slide-left');
+  
+  slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+
+
+
+
+
+  /**
+   * Push left instantiation and action.
+   */
+  var pushLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushLeftBtn = document.querySelector('#c-button--push-left');
+  
+  pushLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushLeft.open();
+  });
+
+
+
+
+
+  /**
+   * Slide right instantiation and action.
+   */
+  var slideRight = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-right',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideRightBtn = document.querySelector('#c-button--slide-right');
+  
+  slideRightBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideRight.open();
+  });
+
+
+
+
+
+  /**
+   * Push right instantiation and action.
+   */
+  var pushRight = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-right',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushRightBtn = document.querySelector('#c-button--push-right');
+  
+  pushRightBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushRight.open();
+  });
+
+
+
+
+
+  /**
+   * Slide top instantiation and action.
+   */
+  var slideTop = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-top',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideTopBtn = document.querySelector('#c-button--slide-top');
+  
+  slideTopBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideTop.open();
+  });
+
+
+
+
+
+  /**
+   * Push top instantiation and action.
+   */
+  var pushTop = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-top',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushTopBtn = document.querySelector('#c-button--push-top');
+  
+  pushTopBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushTop.open();
+  });
+
+
+
+
+
+  /**
+   * Slide bottom instantiation and action.
+   */
+  var slideBottom = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-bottom',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var slideBottomBtn = document.querySelector('#c-button--slide-bottom');
+  
+  slideBottomBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideBottom.open();
+  });
+
+
+
+
+
+  /**
+   * Push bottom instantiation and action.
+   */
+  var pushBottom = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'push-bottom',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+  var pushBottomBtn = document.querySelector('#c-button--push-bottom');
+  
+  pushBottomBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    pushBottom.open();
+  });
+
+</script>
+
+<!-- EXTERNAL SCRIPTS FOR CALLMENICK.COM, PLEASE DO NOT INCLUDE -->
+<script src="js/dist/githubIcons.js"></script>
+<script src="js/dist/carbonAd.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-34160351-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- /EXTERNAL SCRIPTS -->
+
+</body>
+</html>
