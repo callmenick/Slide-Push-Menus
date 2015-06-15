@@ -1,10 +1,10 @@
-# Development Demo Template
+# Slide & Push Menus
 
-Just a simple template for my development demos.
+Codebase & demo for slide and push menus. View the tutorial [here.](http://callmenick.com/post/slide-and-push-menus-with-css3-transitions)
 
 ## Live Demo
 
-View the live demo here.
+View the live demo [here.](http://callmenick.com/_development/slide-push-menus/)
 
 ## License & Copyright
 
