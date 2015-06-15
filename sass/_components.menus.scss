@@ -254,16 +254,13 @@ $menu-height: 60px;
 /**
  * Body states.
  *
- * When a menu is active, 
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
  */
 
 body.has-active-menu {
   overflow: hidden;
 }
-
-
-
-
 
 /**
  * Close button resets.
