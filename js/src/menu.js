@@ -47,6 +47,7 @@
    * Initialise Menu.
    */
   Menu.prototype._init = function() {
+    this.html = document.getElementsByTagName( 'html' )[0];
     this.body = document.body;
     this.wrapper = document.querySelector(this.options.wrapper);
     this.mask = document.querySelector(this.options.maskId);
@@ -77,6 +78,7 @@
    * Open Menu.
    */
   Menu.prototype.open = function() {
+    this.html.classList.add('has-active-menu');
     this.body.classList.add('has-active-menu');
     this.wrapper.classList.add('has-' + this.options.type);
     this.menu.classList.add('is-active');
@@ -88,6 +90,7 @@
    * Close Menu.
    */
   Menu.prototype.close = function() {
+    this.html.classList.remove('has-active-menu');
     this.body.classList.remove('has-active-menu');
     this.wrapper.classList.remove('has-' + this.options.type);
     this.menu.classList.remove('is-active');
